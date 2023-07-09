@@ -4,9 +4,7 @@ import { Helmet } from "react-helmet";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faTwitter,
 	faGithub,
-	faStackOverflow,
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -113,17 +111,7 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						<div className="homepage-socials">
-							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
+						<center className="homepage-socials">
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -131,16 +119,6 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.stackoverflow}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -164,7 +142,7 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
-						</div>
+						</center>
 
 						<div className="homepage-projects">
 							<AllProjects />

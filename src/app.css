@@ -89,6 +89,9 @@
 		padding-right: 10%;
 	}
 }
+.zs_logo_image{
+	width: 100%;
+}
 
 @media (max-width: 1024px) {
 	.page-content:before,
